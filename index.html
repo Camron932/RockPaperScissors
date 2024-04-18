@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="../RockPaperScissors/index.css">
+
+</head>
+    
+
+<body>
+    <div class="topItems">
+        <h1 class="title">Rock • Paper • Scissors</h1>
+        <div class="container">
+            <p class="descrip">Rock Paper Scissors is a game played by, you, the user, selecting one of the buttons bellow and then facing off against a random choice made by the computer. (Remember, Rock beats Scissors, Scissors beats Paper, and Paper beats Rock.) Good luck! </p>
+        </div>
+    </div>
+
+    <div class="middleItems">
+        <div class="boxes">
+            <div class="box">
+                <img class="icons" src="../RockPaperScissors/images/fist.png" alt="Hand in shape of fist.">
+                <button class="button" onclick="userRock();"> Rock </button>
+                </div>
+
+            <div class="box">
+                <img class="icons" src="../RockPaperScissors/images/hand-paper.png" alt="Hand out flat.">
+                <button class="button" onclick="userPaper()"> Paper </button>
+            </div>
+
+            <div class="box">
+                <img class="icons" src="../RockPaperScissors/images/scissors.png" alt="Hand in shape of Scissors.">
+                <button class="button" onclick="userScissors()"> Scissors </button>
+            </div>
+        </div>
+        <div>
+            <div id="text">Please choose!</div>
+        </div>
+    </div>
+
+    <div class="bottomItems">
+        <div class="counters">
+            <p>User Wins.</p>
+            <div class="counter">
+                <div id="counterWin"> 0 </div>
+            </div>
+        </div>
+
+        <div class="resetButton">
+            <button class="button" onclick="reset()"> Reset </button>
+        </div>
+
+        <div class="counters">
+            <p>Computer Wins.</p>
+            <div class="counter">
+                <div id="counterComp"> 0 </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../RockPaperScissors/index.js"></script>
+</body>
