@@ -13,23 +13,26 @@
         <div class="container">
             <p class="descrip">Rock Paper Scissors is a game played by, you, the user, selecting one of the buttons bellow and then facing off against a random choice made by the computer. (Remember, Rock beats Scissors, Scissors beats Paper, and Paper beats Rock.) Good luck! </p>
         </div>
+        <button id="newUser" class="button" > Current User Name: User.</button>
+
+        <button class="button" onclick="bestOfFive()"> Best of Five </button>
     </div>
 
     <div class="middleItems">
         <div class="boxes">
             <div class="box">
                 <img class="icons" src="../RockPaperScissors/images/fist.png" alt="Hand in shape of fist.">
-                <button class="button" onclick="userRock();"> Rock </button>
+                <button id="rock" class="button" onclick="userRock()"> Rock </button>
                 </div>
 
             <div class="box">
                 <img class="icons" src="../RockPaperScissors/images/hand-paper.png" alt="Hand out flat.">
-                <button class="button" onclick="userPaper()"> Paper </button>
+                <button id="paper" class="button" onclick="userPaper()"> Paper </button>
             </div>
 
             <div class="box">
                 <img class="icons" src="../RockPaperScissors/images/scissors.png" alt="Hand in shape of Scissors.">
-                <button class="button" onclick="userScissors()"> Scissors </button>
+                <button id="scissors" class="button" onclick="userScissors()"> Scissors </button>
             </div>
         </div>
         <div>
