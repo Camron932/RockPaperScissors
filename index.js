@@ -96,10 +96,10 @@ function winCon() {
         if (userWins < 3 && compWins < 3) {
             return;
          } else if (userWins == 3) {
-            document.getElementById("text").textContent = `The game has ended, ${userName} wins! The score was ${userWins} to ${compWins}.`
+            alert(`The game has ended, ${userName} wins! The score was ${userWins} to ${compWins}.`);
             {endGame()};
         } else {
-            document.getElementById("text").textContent = `The game has ended, Computer wins! The score was ${userName}: ${userWins} to Computer: ${compWins}.`;
+            alert(`The game has ended, Computer wins! The score was ${userName}: ${userWins} to Computer: ${compWins}.`);
             {endGame()};
         } 
     } else {
